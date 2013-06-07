@@ -16,9 +16,13 @@
  | Authors: Patrick Allaert <patrickallaert@php.net>                    |
  +----------------------------------------------------------------------+
 */
-
-$repository = require "model/repository.php";
-$id = (int) $_GET["id"];
-$event = $repository->getEventService()->loadEvent($id);
-
-require "views/html/event.php";
+?>
+{
+  "total": "<?php echo ceil($records / $rows) ?>",
+  "page": "<?php echo (int) $page ?>",
+  "records": "<?php echo (int) $records ?>",
+  "rows" :
+    <?php
+    echo json_encode($data);
+    ?>
+}

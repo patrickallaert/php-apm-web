@@ -17,8 +17,6 @@
  +----------------------------------------------------------------------+
 */
 
-$repository = require "model/repository.php";
-$id = (int) $_GET["id"];
-$event = $repository->getEventService()->loadEvent($id);
+require "model/apm.php";
 
-require "views/html/event.php";
+return new APM\Repository(require "config/db.php");
