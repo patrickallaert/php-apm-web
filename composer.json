@@ -1,0 +1,13 @@
+{
+    "name": "patrickallaert/php-apm-web",
+    "description": "APM (Alternative PHP Monitor) web frontend",
+    "license": "PHP-3.01",
+    "authors": [
+        {
+            "name": "Patrick Allaert",
+            "email": "patrickallaert@php.net"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
