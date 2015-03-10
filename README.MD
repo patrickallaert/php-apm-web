@@ -11,7 +11,7 @@ This is the web frontend that enables visualizing the data gathered by that exte
 1. Check out this repository so that it can be accessed by your webserver.
 
     ```
-    git clone https://github.com/patrickallaert/php-apm.git
+    git clone https://github.com/patrickallaert/php-apm-web.git apm-web
     ```
 
 2. Configure `config/db.php` to use the correct backend:
